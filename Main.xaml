@@ -81,13 +81,13 @@
       <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="772,2651" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="654,2489" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="シーケンス" sap:VirtualizedContainerService.HintSize="538,2628" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence DisplayName="シーケンス" sap:VirtualizedContainerService.HintSize="538,2466" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <Sequence.Variables>
         <Variable x:TypeArguments="x:Int32" Name="ix" />
         <Variable x:TypeArguments="scg:List(scg:List(x:String))" Default="[New List(Of List(Of String))()]" Name="配列可変" />
@@ -97,25 +97,14 @@
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:CommentOut DisplayName="コメント アウト" sap:VirtualizedContainerService.HintSize="504,276" sap2010:WorkflowViewState.IdRef="CommentOut_1">
-        <ui:CommentOut.Body>
-          <Sequence DisplayName="無視されるアクティビティ" sap:VirtualizedContainerService.HintSize="468,165" sap2010:WorkflowViewState.IdRef="Sequence_4">
-            <sap:WorkflowViewStateService.ViewState>
-              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-              </scg:Dictionary>
-            </sap:WorkflowViewStateService.ViewState>
-            <Assign DisplayName="代入" sap:VirtualizedContainerService.HintSize="434,105" sap2010:WorkflowViewState.IdRef="Assign_2">
-              <Assign.To>
-                <OutArgument x:TypeArguments="scg:List(scg:List(x:String))">[配列可変]</OutArgument>
-              </Assign.To>
-              <Assign.Value>
-                <InArgument x:TypeArguments="scg:List(scg:List(x:String))">[New List(Of List(Of String))()]</InArgument>
-              </Assign.Value>
-            </Assign>
-          </Sequence>
-        </ui:CommentOut.Body>
-      </ui:CommentOut>
+      <Assign DisplayName="代入" sap:VirtualizedContainerService.HintSize="504,114" sap2010:WorkflowViewState.IdRef="Assign_3">
+        <Assign.To>
+          <OutArgument x:TypeArguments="scg:List(scg:List(x:String))">[配列可変]</OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="scg:List(scg:List(x:String))">[New List(Of List(Of String))()]</InArgument>
+        </Assign.Value>
+      </Assign>
       <uasc:AppendItemToCollection x:TypeArguments="scg:List(x:String)" Collection="[配列可変]" DisplayName="コレクションに項目を追加" sap:VirtualizedContainerService.HintSize="504,173" sap2010:WorkflowViewState.IdRef="AppendItemToCollection`1_4">
         <uasc:AppendItemToCollection.Items>
           <scg:List x:TypeArguments="InArgument(scg:List(x:String))" Capacity="4">
